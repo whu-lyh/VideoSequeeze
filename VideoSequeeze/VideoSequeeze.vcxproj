@@ -68,7 +68,16 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>E:\Library\opencv-3.4.0\include;E:\Library\opencv-3.4.0\include\opencv2;E:\Library\opencv-3.4.0\include\opencv;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Library\opencv-3.4.0\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>E:\Library\opencv-3.4.0\x64\vc14\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>E:\Library\opencv-3.4.0\include;E:\Library\opencv-3.4.0\include\opencv2;E:\Library\opencv-3.4.0\include\opencv;$(IncludePath)</IncludePath>
+    <ExecutablePath>E:\Library\opencv-3.4.0\x64\vc14\bin;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>E:\Library\opencv-3.4.0\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -110,6 +119,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="openlaptapCamera.cpp" />
     <ClCompile Include="videoSequeeze.cpp" />
   </ItemGroup>
   <ItemGroup>
