@@ -19,10 +19,10 @@ using namespace cv;
 
 int main ()
 {
-	int faster_times = 4;
+	int faster_times = 10;
 
-	//cv::String in_path = "E:/lyh/PointCloudRoamVideoSamples/ShanghaiZhangJiang8Block.mp4";
-	cv::String in_path = "E:/treeExtraction.wmv";
+	cv::String in_path = "E:/lyh/PointCloudRoamVideoSamples/ShanghaiZhangJiang8Block.mp4";
+	//cv::String in_path = "E:/treeExtraction.wmv";
 	std::cout << in_path << std::endl;
 	cv::String out_path = "E:\\lyh\\PointCloudRoamVideoSamples\\ShanghaiZhangJiang8Block4Times.mp4";
 	cv::namedWindow ( "origin", cv::WindowFlags::WINDOW_AUTOSIZE );
@@ -50,7 +50,7 @@ int main ()
 	{
 		videocapture >> bgr_frame;
 		if ( bgr_frame.empty () ) break;
-		imshow ( "origin", bgr_frame );
+		//imshow ( "origin", bgr_frame );
 
 		imshow ( "faster", bgr_frame );
 		writer << bgr_frame;

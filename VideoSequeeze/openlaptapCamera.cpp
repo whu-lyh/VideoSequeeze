@@ -4,21 +4,21 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <iostream>
 
-#ifdef _DEBUG
-#pragma comment(lib,"opencv_core340d.lib")
-#pragma comment(lib,"opencv_highgui340d.lib")
-#pragma comment(lib,"opencv_video340d.lib")
-#pragma comment(lib,"opencv_videoio340d.lib")
-#pragma comment(lib,"opencv_videostab340d.lib")
-#pragma comment(lib,"opencv_imgproc340d.lib")//cv::cvtColor
-#else
-#pragma comment(lib,"opencv_core340.lib")
-#pragma comment(lib,"opencv_highgui340.lib")
-#pragma comment(lib,"opencv_video340.lib")
-#pragma comment(lib,"opencv_videoio340.lib")
-#pragma comment(lib,"opencv_videostab340.lib")
-#pragma comment(lib,"opencv_imgproc340.lib")
-#endif
+//#ifdef _DEBUG
+//#pragma comment(lib,"opencv_core340d.lib")
+//#pragma comment(lib,"opencv_highgui340d.lib")
+//#pragma comment(lib,"opencv_video340d.lib")
+//#pragma comment(lib,"opencv_videoio340d.lib")
+//#pragma comment(lib,"opencv_videostab340d.lib")
+//#pragma comment(lib,"opencv_imgproc340d.lib")//cv::cvtColor
+//#else
+//#pragma comment(lib,"opencv_core340.lib")
+//#pragma comment(lib,"opencv_highgui340.lib")
+//#pragma comment(lib,"opencv_video340.lib")
+//#pragma comment(lib,"opencv_videoio340.lib")
+//#pragma comment(lib,"opencv_videostab340.lib")
+//#pragma comment(lib,"opencv_imgproc340.lib")
+//#endif
 
 using namespace std;
 using namespace cv;

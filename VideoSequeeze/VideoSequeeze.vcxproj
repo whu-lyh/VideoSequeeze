@@ -69,14 +69,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\Library\opencv-3.4.0\include;E:\Library\opencv-3.4.0\include\opencv2;E:\Library\opencv-3.4.0\include\opencv;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Library\opencv-3.4.0\x64\vc14\lib;$(LibraryPath)</LibraryPath>
-    <ExecutablePath>E:\Library\opencv-3.4.0\x64\vc14\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>E:\Library\opencv-3.4.0-vc14_vc15\include\opencv2;E:\Library\opencv-3.4.0-vc14_vc15\include\opencv;E:\Library\opencv-3.4.0-vc14_vc15\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Library\opencv-3.4.0-vc14_vc15\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>E:\Library\opencv-3.4.0-vc14_vc15\x64\vc14\bin;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>E:\Library\opencv-3.4.0\include;E:\Library\opencv-3.4.0\include\opencv2;E:\Library\opencv-3.4.0\include\opencv;$(IncludePath)</IncludePath>
-    <ExecutablePath>E:\Library\opencv-3.4.0\x64\vc14\bin;$(ExecutablePath)</ExecutablePath>
-    <LibraryPath>E:\Library\opencv-3.4.0\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\Library\opencv-3.4.0-vc14_vc15\include\opencv2;E:\Library\opencv-3.4.0-vc14_vc15\include\opencv;E:\Library\opencv-3.4.0-vc14_vc15\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>E:\Library\opencv-3.4.0-vc14_vc15\x64\vc14\bin;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>E:\Library\opencv-3.4.0-vc14_vc15\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
