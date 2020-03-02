@@ -1,7 +1,7 @@
 ### Usage
 This repository is used to sequeeze a normal video to a n times faster.   
 __But__, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.   
-OpenCV requires being complied with __ffmepg__, which i didn't have the condition.   
+OpenCV requires being complied with __ffmepg__, which i didn't have the condition and many video format(.mp4) is not well supported.   
 Under Linux   
 1. Install ffmepg   
 sudo apt install ffmpeg   
