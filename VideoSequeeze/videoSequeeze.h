@@ -1,5 +1,5 @@
 #pragma once
-//this project is used to sequeeze a long video to a n times faster
+//this project is used to sequeeze a long video to a n times faster video
 
 #pragma warning(disable: 4267)
 #pragma warning(disable: 4251)

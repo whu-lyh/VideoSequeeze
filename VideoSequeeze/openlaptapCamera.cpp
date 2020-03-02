@@ -57,7 +57,7 @@ int main0 (int argc,char*argv[ ])
 			frame.copyTo ( dst, detected_edges );
 			imshow ( "Canny retult", dst );
 
-			//quit press ESC
+			// quit press ESC
 			char c = waitKey ( 10 );
 			if ( c == 27 ) break;
 		}
@@ -66,8 +66,8 @@ int main0 (int argc,char*argv[ ])
 	{
 		while ( 1 )
 		{
-			cap >> frame;//equal to cap.read(frame);
-			cv::flip ( frame, frame, 1 );//mirror image,just have try and you will know what is this
+			cap >> frame; //equal to cap.read(frame);
+			cv::flip ( frame, frame, 1 ); //mirror image,just have try and you will know what is this
 			cvtColor ( frame, frame, CV_BGR2BGRA );
 			if ( frame.empty () )
 				break;
@@ -79,8 +79,8 @@ int main0 (int argc,char*argv[ ])
 		}
 	}
 
-	cap.release ();//release all the resources
-	cv::destroyAllWindows ();//close all window
+	cap.release (); //release all the resources
+	cv::destroyAllWindows (); //close all window
 
 	system ( "pause" );
 	return 0;
